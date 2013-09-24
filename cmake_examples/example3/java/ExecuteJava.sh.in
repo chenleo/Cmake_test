@@ -1,0 +1,3 @@
+#!/bin/sh
+
+java -cp ${EXECUTABLE_OUTPUT_PATH}/count_java.jar $*

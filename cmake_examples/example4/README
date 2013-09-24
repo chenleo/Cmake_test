@@ -1,0 +1,22 @@
+Example 2
+==========
+
+Building and linking to shared libraries, static libraries 
+and fortran modules
+
+NOTES:
+=======
+
+Step 1) cmake . 
+Step 2) make
+Step 3) touch *.mod.proxy files
+Step 4) make 
+Step 5) make test
+Step 6) make clean
+
+!! There is a bug in CMake which does not correctly compile 
+!! fortran modules. If you run make the compiler will give an 
+!! error about a missing <...>.mod.proxy file. This is a problem
+!! in CMake and should be fixed in the next release. For the time 
+!! being we can manually touch the proxy files required in the local 
+!! directory and rerun make to complete compilation. 

@@ -1,0 +1,10 @@
+ENABLE_TESTING()
+
+FIND_PACKAGE(Java)
+
+# Notice our problem with java and testing a library: 
+ADD_TEST(test0 executeJava.sh Count 0)
+ADD_TEST(test-1 executeJava.sh Count -1)
+ADD_TEST(test2 executeJava.sh Count 2)
+ADD_TEST(testNoArgs executeJava.sh Count)
+ADD_TEST(test20 executeJava.sh Count 20)

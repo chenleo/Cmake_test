@@ -1,0 +1,18 @@
+Example 2
+==========
+
+Multi-project or multi-level builds with CMake
+
+NOTES:
+=======
+
+Step 1) cmake . 
+Step 2) make
+Step 3) make clean
+
+!! There is a bug in CMake which does not correctly compile 
+!! a Java subdirectory. If you first call cmake and make in the master
+!! directory then cd into java dir and rerun cmake and make, this builds
+!! the temporary files required for the master directory to finish 
+!! the master build. This is a major hassle, but at least you can do 
+!! multi-level builds for C++ and Fortran with no problem. 

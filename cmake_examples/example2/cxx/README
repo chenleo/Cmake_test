@@ -1,0 +1,13 @@
+Example 1
+============
+
+Compile a simple count to 10 example. 
+
+
+NOTES:
+=========
+
+Step 1) cmake .
+Step 2) make
+Step 3) make clean
+

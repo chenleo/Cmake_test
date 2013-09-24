@@ -1,0 +1,12 @@
+Example 2
+==========
+
+Testing code with CMake
+
+NOTES:
+=======
+
+Step 1) cmake . 
+Step 2) make
+Step 3) ctest .
+Step 4) make clean 
